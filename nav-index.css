@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url("Fonts/roboto/Roboto-Regular.ttf")
+}
+
+@font-face {
+    font-family: "rambler";
+    src: url("Fonts/the_rambler/The\ Rambler.ttf")
+}
+
+.bloc-menu {
+    box-shadow: 0 15px 15px rgba(0, 0, 0, .15);
+}
+
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+hr {
+    border: solid 1px rgba(20, 20, 20, 0.5);
+    border-radius: 1px;
+    margin: 0 10px;
+}
+
+.menu-burger {
+    display: flex;
+    justify-content: space-between;
+    font-family: "roboto";
+    color: #FFFFFF;
+}
+
+@keyframes slidy {
+    0% {
+        left: 0%;
+    }
+    20% {
+        left: 0%;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+div#slider {
+    overflow: hidden;
+}
+
+div#slider figure img {
+    width: 20%;
+    float: left;
+}
+
+div#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    text-align: left;
+    font-size: 0;
+    animation: 30s slidy infinite;
+}
+
+#slider {
+    position: relative;
+}
+
+.julian {
+    font-family: "rambler";
+    font-size: 60px;
+    padding: 25px;
+    margin-left: 70px;
+}
+
+.social {
+    padding: 50px 20px;
+}
+
+.social a {
+    padding: 0 12px;
+}
+
+.photograph {
+    font-family: "rambler";
+    font-size: 50px !important;
+}
+
+.menu-burger {
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(54, 54, 54, 0.5) 50%, rgba(28, 28, 28, 0));
+}
+
+.topbar {
+    display: block;
+    position: relative;
+    top: 50px;
+    left: 40px;
+    z-index: 1;
+}
+
+.topbar a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 0.3s;
+}
+
+.topbar a:hover {
+    color: #009DA5;
+}
+
+.social img {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 0.3s;
+}
+
+.social img:hover {
+    opacity: 0.5;
+}
+
+.topbar input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+}
+
+.topbar span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: #FFFFFF;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.topbar input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(0, 12px);
+    background: #FFFFFF;
+}
+
+.topbar input:checked~span:nth-last-child(3) {
+    opacity: 0;
+}
+
+.topbar input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -12px);
+}
+
+.topbar-menu {
+    position: absolute;
+    width: 200px;
+    margin: -100px 0 0 -50px;
+    padding: 20px 0px 3px 30px;
+    padding-top: 125px;
+    background: rgba(0, 157, 165, 0.3);
+    list-style-type: none;
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    transition: transform 0.5s;
+}
+
+.topbar-menu li {
+    position: relative;
+    padding: 20px 0;
+    font-size: 30px;
+}
+
+.country li {
+    padding: 10px 0;
+}
+
+.topbar-menu ul {
+    display: none;
+    list-style-type: none;
+    margin: 0px;
+    padding-top: 10px;
+    background: rgba(0, 157, 165, 0.5);
+}
+
+.topbar-menu li:hover ul {
+    display: block;
+    position: absolute;
+    padding: 0px 10px;
+    top: 0px;
+    left: 170px;
+    z-index: 100;
+}
+
+.topbar input:checked~ul {
+    transform: none;
+}
+
+.nav-bar {
+    display: none;
+}
+
+@media only screen and (min-width: 641px) {
+    .menu-burger {
+        display: none;
+    }
+    .julian {
+        display: none;
+    }
+    .nav-bar {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 30px;
+        font-size: 20px;
+        font-family: 'roboto';
+        height: 100px;
+        width: 100%;
+        z-index: 999;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(54, 54, 54, 0.5) 50%, rgba(28, 28, 28, 0))
+    }
+    .nav-bar a:hover {
+        color: #009DA5;
+    }
+    .scrol ul {
+        display: none;
+        list-style-type: none;
+        margin: 0px;
+        background: rgba(0, 157, 165, 0.5);
+    }
+    .scrol li {
+        list-style-type: none;
+        padding: 10px 20px;
+    }
+    .country ul li a:hover {
+        color: #141414;
+    }
+    .scrol li:hover ul {
+        display: block;
+        position: absolute;
+        z-index: 101;
+    }
+    .photograph {
+        font-size: 70px !important;
+    }
+}
