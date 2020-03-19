@@ -47,19 +47,19 @@
 
 ## Charte graphique
 
-![Charte Graphique](images/CharteProjet01.jpg)
+![Charte Graphique](assets/images/CharteProjet01.jpg)
 
 ## Wireframe Mobile
 
-![index](images/Index.jpg)
-![index](images/IndexB.jpg)
-![pays](images/Pays.jpg)
-![bio](images/Bio.jpg)
-![contact](images/Contact.jpg)
+![index](assets/images/Index.jpg)
+![index](assets/images/IndexB.jpg)
+![pays](assets/images/Pays.jpg)
+![bio](assets/images/Bio.jpg)
+![contact](assets/images/Contact.jpg)
 
 ## Wireframe Desktop
 
-![index](images/IndexD.jpg)
-![pays](images/PaysD.jpg)
-![bio](images/BioD.jpg)
-![contact](images/ContactD.jpg)
+![index](assets/images/IndexD.jpg)
+![pays](assets/images/PaysD.jpg)
+![bio](assets/images/BioD.jpg)
+![contact](assets/images/ContactD.jpg)

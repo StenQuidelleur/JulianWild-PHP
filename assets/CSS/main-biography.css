@@ -1,14 +1,3 @@
-@font-face{
-    font-family: "roboto";
-    src: url("Fonts/roboto/Roboto-Regular.ttf");
-}
-
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
-}
 
 .responsive{
     font-family: "roboto";

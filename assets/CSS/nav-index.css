@@ -1,18 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-@font-face {
-    font-family: "roboto";
-    src: url("Fonts/roboto/Roboto-Regular.ttf")
-}
-
-@font-face {
-    font-family: "rambler";
-    src: url("Fonts/the_rambler/The\ Rambler.ttf")
-}
 
 .bloc-menu {
     box-shadow: 0 15px 15px rgba(0, 0, 0, .15);
