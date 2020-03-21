@@ -1,4 +1,9 @@
 
+@font-face {
+    font-family: "rambler";
+    src: url("../Fonts/the_rambler/The Rambler.ttf")
+}
+
 .bloc-menu {
     box-shadow: 0 15px 15px rgba(0, 0, 0, .15);
 }
@@ -17,7 +22,7 @@ hr {
 .menu-burger {
     display: flex;
     justify-content: space-between;
-    font-family: "roboto";
+    font-family: 'Quattrocent' ,sans-serif;
     color: #FFFFFF;
 }
 
@@ -172,7 +177,7 @@ div#slider figure {
     margin: -100px 0 0 -50px;
     padding: 20px 0px 3px 30px;
     padding-top: 125px;
-    background: rgba(0, 157, 165, 0.3);
+    background: rgba(20, 20, 20, 0.3);
     list-style-type: none;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
@@ -194,7 +199,7 @@ div#slider figure {
     list-style-type: none;
     margin: 0px;
     padding-top: 10px;
-    background: rgba(0, 157, 165, 0.5);
+    background: rgba(20, 20, 20, 0.5);
 }
 
 .topbar-menu li:hover ul {
@@ -228,20 +233,20 @@ div#slider figure {
         align-items: center;
         padding-left: 30px;
         font-size: 20px;
-        font-family: 'roboto';
+        font-family: 'Quattrocent' ,sans-serif;
         height: 100px;
         width: 100%;
         z-index: 999;
         background: linear-gradient(180deg, rgba(0, 0, 0, 0.5), rgba(54, 54, 54, 0.5) 50%, rgba(28, 28, 28, 0))
     }
     .nav-bar a:hover {
-        color: #009DA5;
+        color: #141414;
     }
     .scrol ul {
         display: none;
         list-style-type: none;
         margin: 0px;
-        background: rgba(0, 157, 165, 0.5);
+        background: rgba(20, 20, 20, 0.5);
     }
     .scrol li {
         list-style-type: none;

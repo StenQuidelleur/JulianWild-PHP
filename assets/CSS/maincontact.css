@@ -5,13 +5,13 @@ h3{
   padding: 100px;
   font-size: 18px;
   color: #141414;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Quattrocent' ,sans-serif;
 }
 /* UNIQUEMENT POUR GET */
 
 .formulairediv{
   width: 100%;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Quattrocent' ,sans-serif;
   font-size: 18px;
   color: #141414;
   text-align: center;
@@ -21,13 +21,12 @@ h3{
 
 .form, textarea, .button-contact {
   font-size: 18px;
-  border: 2px solid rgba(128, 128, 128, 0.5);
+  border: 1px solid rgba(128, 128, 128, 0.5);
   color: rgb(85, 81, 81);
   padding: 15px;
   margin: 5px;
   border-radius: 20px;
   width: 50%;
-  box-shadow: 2px 4px rgba(173, 171, 171, 0.26);
   resize: none;
   outline: none;
 }
@@ -44,8 +43,8 @@ textarea {
   cursor: pointer;
   font-size: 24px;
   background-color: #FFFFFF;
-  color: #009DA5;
-  border: 2px solid #009DA5;
+  color: #141414;
+  border: 1px solid rgba(128, 128, 128, 0.5);
 }
 
 label {
@@ -60,25 +59,25 @@ label {
 .button-contact:hover {
   border: none;
   color: #FFFFFF;
-  background-color: rgba(0, 157, 165, 0.342);
+  background-color: rgba(20, 20, 20, 0.342);
   transition: .2s;
 }
 
 textarea:hover,
 .form:hover {
-  border: 2px solid #009DA5;
-  box-shadow: 2px 4px #009DA5;
+  border: 1px solid #141414;
+  box-shadow: 2px 4px #141414;
   transition: .2s;
 }
 
 .form:focus,
 textarea:focus {
-  background-color: rgba(0, 157, 165, 0.205);
+  background-color: rgba(20, 20, 20, 0.205);
   transition: .2s;
 }
 
 .button-contact:focus {
-  background-color: #009DA5;
+  background-color: #141414;
   transition: .2s;
 }
 
@@ -108,7 +107,7 @@ textarea:focus {
     padding: 0px;
     display: inline-block;
     font-size: 18px;
-    border: 2px solid #009DA5;
+    border: 1px solid #141414;
   }
 
   label {

@@ -14,37 +14,37 @@
 </header>
 <main>
     <h1 class="featured-galleries">currently featured <strong>galleries</strong></h1>
-    <div class="container">
+    <div class="container-index">
         <div class="container-country brasil">
-            <a href="brasil.php">
+            <a href="pages/brasil.php">
                 <img src="assets/ImagesPages/brazil-resized/image07.jpg" alt="Brasil" class="image">
                 <div class="overlay">
-                    <div class="text-country">BRASIL</div>
+                    <div class="text-country-index">BRASIL</div>
                 </div>
             </a>
         </div>
 
         <div class="container-country chile">
-            <a href="chile.php">
+            <a href="pages/chile.php">
                 <img src="assets/ImagesPages/chile_resizied/image10.jpg" alt="Chile" class="image">
                 <div class="overlay">
-                    <div class="text-country">CHILE</div>
+                    <div class="text-country-index">CHILE</div>
                 </div>
             </a>
         </div>
         <div class="container-country">
-            <a href="mexico.php">
+            <a href="pages/mexico.php">
                 <img src="assets/ImagesPages/mexico_resized/image07.jpg" alt="Mexique" class="image">
                 <div class="overlay">
-                    <div class="text-country">MEXICO</div>
+                    <div class="text-country-index">MEXICO</div>
                 </div>
             </a>
         </div>
         <div class="container-country">
-            <a href="peru.php">
+            <a href="pages/peru.php">
                 <img src="assets/ImagesPages/peru_resized/image11.jpg" alt="Peru" class="image">
                 <div class="overlay">
-                    <div class="text-country">PERU</div>
+                    <div class="text-country-index">PERU</div>
                 </div>
             </a>
         </div>
