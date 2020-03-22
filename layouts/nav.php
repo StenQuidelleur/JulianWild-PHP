@@ -17,16 +17,15 @@
                     <li><a href="../pages/peru.php">Peru</a></li>
                 </ul>
             </li>
-            <li><a href="../pages/biography.php">Biography</a></li>
+            <li><a href="../pages/profile.php">Biography</a></li>
             <li><a href="../pages/contact.php">Contact</a></li>
         </ul>
     </div>
     <div class="julian">
         <a href="../index.php">JW</a>
     </div>
-    <div class="social">
-        <a href="#" title="Instagram"><img src="../assets/Logos/instagram.svg" width="25px" height="25px" alt="Logo"></a>
-        <a href="#" title="Pinterest"><img src="../assets/Logos/pinterest.svg" width="25px" height="25px" alt="Logo"></a>
+    <div class="login">
+        <a href="../pages/login.php" title="login">Login</a>
     </div>
 </nav>
 <nav class="nav-bar">
@@ -44,10 +43,21 @@
             </ul>
         </li>
     </div>
-    <a href="../pages/biography.php">Biography</a>
     <a href="../pages/contact.php">Contact</a>
-    <div class="social">
-        <a href="#" title="Instagram"><img src="../assets/Logos/instagram.svg" width="25px" height="25px" alt="Logo"></a>
-        <a href="#" title="Pinterest"><img src="../assets/Logos/pinterest.svg" width="25px" height="25px" alt="Logo"></a>
-    </div>
+    <?php
+        if (empty($_SESSION['isConnected']) && empty($_SESSION['username'])) { ?>
+        <div class="login">
+            <a href="../pages/login.php" title="login">Login</a>
+        </div>
+    <?php } else {?>
+        <a href="../pages/profile.php">Profile</a>
+    <?php }?>
+    <?php
+        if (isset($_SESSION['isConnected']) && $_SESSION['isConnected'] === true) {
+    ?>
+         <form method='POST' action='../index.php' class='logout'>
+             <button type="submit" name='logout' title='login'>Logout</button>
+         </form>
+    <?php } else { echo "";} ?>
+
 </nav>

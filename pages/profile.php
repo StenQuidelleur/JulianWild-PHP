@@ -1,4 +1,10 @@
-<?php include('../layouts/head.php'); ?>
+<?php
+    session_start();
+    include('../layouts/head.php');
+    if(empty($_SESSION['isConnected']) || $_SESSION['isConnected'] == false){
+        Header('Location: http://localhost:8000/index.php');
+    }
+?>
 
 <header>
     <?php include('../layouts/nav.php'); ?>
@@ -7,6 +13,23 @@
     </div>
 </header>
 <main>
+    <div classe="profile-image">
+        <img src="<?php echo $_SESSION['profile_image'];?>">
+    </div>
+    <div class="info-profile">
+        <h1>
+            Hello,
+            <span>
+                  <?php
+                  if(isset($_SESSION['username'])) {
+                      echo $_SESSION['username'];
+                  } else {
+                      echo 'error';
+                  }
+                  ?>
+            </span>
+        </h1>
+    </div>
     <div class="responsive">
         <h2 class="skills">Photographer</h2>
         <p class="p1">

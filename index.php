@@ -1,4 +1,13 @@
-<?php include('layouts/head.php'); ?>
+<?php
+    session_start();
+    include('layouts/head.php');
+
+    if(isset($_POST['logout'])){
+        unset($_SESSION['isConnected']);
+        unset($_SESSION['username']);
+        session_destroy();
+    }
+?>
 
 <header class="bloc-menu">
     <?php include('layouts/nav.php'); ?>

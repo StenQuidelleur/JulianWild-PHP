@@ -124,15 +124,18 @@ div#slider figure {
     color: #009DA5;
 }
 
-.social img {
-    text-decoration: none;
+.login a {
+    text-decoration: underline;
+    margin-right: 40px;
     color: #FFFFFF;
     transition: color 0.3s;
 }
 
-.social img:hover {
+.login a:hover {
     opacity: 0.5;
 }
+
+
 
 .topbar input {
     display: block;
@@ -242,6 +245,23 @@ div#slider figure {
     .nav-bar a:hover {
         color: #141414;
     }
+    .logout button {
+        margin-right: 40px;
+        background-color: #F4F4F4 ;
+        color: #141414;
+        width: 100px;
+        height: 30px;
+        cursor: pointer;
+        font-size: 20px;
+        border: 1px solid rgba(128, 128, 128, 0.5);
+        border-radius: 5px;
+        transition: color 0.3s;
+    }
+
+    .logoutbutton:hover {
+        opacity: 0.5;
+    }
+
     .scrol ul {
         display: none;
         list-style-type: none;
