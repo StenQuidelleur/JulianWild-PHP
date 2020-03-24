@@ -53,18 +53,18 @@
                 <div>
                     <h1>SUCCESS</h1>
                 </div>
-                <?php /*
-                    $to= sten.quidelleur36@gmail.com;
-                    $from= sten.quidelleur@outlook.fr;
+                <?php
+                    $to= "sten.quidelleur36@gmail.com";
+                    $from= "sten.test4php@gmail.com";
                     if (isset($_POST['firstname'])){
                         $firstname= $_POST['firstname'];
                     }
                     $message = $_POST['message'];
                     $email = $_POST['email'];
                     $subject= "New message from your contact";
-                    $content = "Le message vous a été envoyé par " . $email . ": <br>" . $message;
+                    $content = "Le message vous a été envoyé par" . $email . ": <br>" . $message;
                     $headers = "From: " . $from;
-                    mail($to, $subject, $content, $headers);*/
+                    mail($to, $subject, $content, $headers);
                 ?>
             <?php
                 }
