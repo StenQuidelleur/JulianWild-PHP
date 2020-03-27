@@ -1,6 +1,7 @@
 <?php
     session_start();
     include('layouts/head.php');
+    include('controller/controller.php');
 
     if(isset($_POST['logout'])){
         getUserLogout();

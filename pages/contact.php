@@ -11,7 +11,6 @@
             $errors['message']= "Le champs message est obligatoire !";
         }
     }
-
 ?>
 
     <header>

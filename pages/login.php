@@ -1,6 +1,7 @@
 <?php
     session_start();
     include('../layouts/head.php');
+    include('../controller/controller.php');
 
     if (isset($_POST)) {
         if(empty($_POST['username'])){
@@ -21,17 +22,23 @@
     </div>
 </header>
 <main>
-    <div>
-        <?php if (isset($error['password'])) {
-            echo $error['password'];
-        }?>
-    </div>
+
     <div class="formulairediv">
         <form method="POST">
             <input type="text" name="username" class="form" placeholder="Username">
             <br>
+            <div>
+                <?php if (isset($error['username'])) {
+                    echo $error['username'];
+                }?>
+            </div>
             <input type="password" name="password" class="form" placeholder="Password">
             <br>
+            <div>
+                <?php if (isset($error['password'])) {
+                    echo $error['password'];
+                }?>
+            </div>
             <input type="text" name="profile_image" class="form" placeholder="Upload picture">
             <br>
             <button class="button-contact" name="submit">Submit</button>
