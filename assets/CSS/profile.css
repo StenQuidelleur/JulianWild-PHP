@@ -1,0 +1,35 @@
+.profile-image img {
+    overflow:hidden;
+    border-radius:50px;
+    width:90px;
+    height:90px;
+}
+
+.p1, .p2 {
+    color: #141414;
+    text-align: justify;
+    font-family: 'Quattrocent' ,sans-serif;
+    font-size: 1em;
+    margin: 20px 0 30px 0;
+}
+
+.skills {
+    color:white;
+    font-size: 1.5em;
+    font-family: 'Quattrocent' ,sans-serif;
+    padding: 15px;
+    margin: 200px 0 10px 0;
+    background-color: #404851;
+    border-radius: 5px;
+    text-align: center;
+      
+}
+
+@media only screen and (min-width: 641px) {
+    .skills {
+        color: #141414;
+        background-color: #F4F4F4;
+        text-align: left;
+        padding: 0;
+    }
+}

@@ -1,6 +1,6 @@
 
 .featured-galleries {
-  font-family: "roboto";
+  font-family: 'Quattrocent' ,sans-serif;
   text-align: center;
   color: #141414;
   margin-bottom: 1.5em;
@@ -14,7 +14,7 @@ strong {
   font-style: italic;
   font-weight: 900;
 }
-.container {
+.container-index {
   margin: auto;
 }
 
@@ -42,12 +42,12 @@ strong {
   transition: all 400ms ease;
   background-color: rgba(0, 0, 0, 0.5);
 }
-.text-country {
+.text-country-index {
   position: absolute;
   top: 50%; left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: "mexicana";
+  font-family: 'Ultra', serif;
   font-size: 15vw;
 }
 
@@ -57,21 +57,16 @@ strong {
     opacity:1;
   }
 
-  .container-country:hover {
-    transform: translate(10px, -10px);
-    box-shadow: -8px 8px 0px #009DA5
-  }
-
   .overlay {
     opacity: 0;
-    background-color: rgba(0, 157, 165, 0.5);
+    background-color: rgba(20, 20, 20, 0.5);
   }
 
   .container-country {
     margin-bottom: 0;
   }
 
-  .container {
+  .container-index {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -79,7 +74,7 @@ strong {
 
   }
   
-  .text-country {
+  .text-country-index {
     font-size: 7vw;
   }
 }

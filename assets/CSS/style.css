@@ -1,0 +1,26 @@
+
+@font-face {
+  font-family: "rambler";
+  src: url("../Fonts/the_rambler/The Rambler.ttf")
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  height: 1000px;
+}
+
+body {
+  background-color: #F4F4F4;
+}
+
+main {
+  margin: auto;
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}

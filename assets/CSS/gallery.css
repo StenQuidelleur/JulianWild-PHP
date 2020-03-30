@@ -35,8 +35,8 @@
 }
 
 .title-country {
-    font-family: 'roboto';
-    background-color: #009DA5;
+    font-family: 'Quattrocent' ,sans-serif;
+    background-color: #404851;
     color: #FFF;
     margin-top: 20px;
     padding: 15px;
@@ -45,7 +45,7 @@
 }
 
 .text-country {
-    font-family: 'roboto';
+    font-family: 'Quattrocent' ,sans-serif;
     line-height: 2rem;
     color: #141414;
     font-size: 1em;
