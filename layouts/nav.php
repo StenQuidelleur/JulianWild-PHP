@@ -25,7 +25,7 @@
         <a href="../index.php">JW</a>
     </div>
     <div class="login">
-        <a href="../pages/login.php" title="login">Login</a>
+        <a href="../pages/login.php" >Login</a>
     </div>
 </nav>
 <nav class="nav-bar">
@@ -47,7 +47,7 @@
     <?php
         if (empty($_SESSION['isConnected']) && empty($_SESSION['username'])) { ?>
         <div class="login">
-            <a href="../pages/login.php" title="login">Login</a>
+            <a href="../pages/login.php" >Login</a>
         </div>
     <?php } else {?>
         <a href="../pages/profile.php">Profile</a>
@@ -56,7 +56,7 @@
         if (isset($_SESSION['isConnected']) && $_SESSION['isConnected'] === true) {
     ?>
          <form method='POST' action='../index.php' class='logout'>
-             <button type="submit" name='logout' title='login'>Logout</button>
+             <button type="submit" name='logout' >Logout</button>
          </form>
     <?php } else { echo "";} ?>
 
